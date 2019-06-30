@@ -8,21 +8,21 @@ body{
 
 #container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items:center;
     background-color: #fffef6;
-    height: 100%;
     background-size: cover;
     overflow: hidden;
-    margin-left: 14vh;
-    margin-right: 14vh;
-    margin-top: 15vh;
-    margin-bottom: 15vh;
-    height: 70vh;
+    margin-left: 7vh;
+    margin-right: 7vh;
+    margin-top: 6vh;
+    margin-bottom: 6vh;   
 }
 
 #firstBlock{
-    margin-left: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 #textArea{
@@ -35,6 +35,7 @@ body{
     background-repeat: no-repeat;
     padding-left: 1rem;
     background-position: right;
+    align-self: center;
 }
 
 #button{
@@ -48,15 +49,16 @@ body{
     font-weight: bolder;
     cursor: pointer;
     border-style: unset;
+    align-self: center;
 }
 
 #p{
-    font-size: 0.78rem;
+    font-size: 2vw;
     background-color: #fffef6;
 }
 
 #h{
-    font-size: 2rem;
+    font-size: 5vw;
     font-weight: bolder;
 }
 
@@ -73,8 +75,44 @@ body{
 }
 
 #pic{
-    margin-left: 4rem;
-    margin-right: 0.5rem;
-    block-size: 40vh;
+    block-size: 35vh;
     max-width: 100%;
+    margin-top: 2rem;
+}
+
+@media (min-width:600px){
+    #container{
+        flex-direction: row-reverse;
+        margin-left: 14vh;
+        margin-right: 14vh;
+        margin-top: 15vh;
+        margin-bottom: 15vh;
+        height: 70vh;
+    }
+    #p{
+        font-size: 0.78rem;
+    }
+    
+    #h{
+        font-size: 2rem;
+    }
+
+    #pic{
+        margin-left: 4rem;
+        margin-right: 0.5rem;
+        block-size: 40vh;
+        max-width: 100%;
+    }
+
+    #firstBlock{
+        margin-left: 5rem;
+    }
+
+    #button{
+        align-self: unset;
+    }
+
+    #textArea{
+        align-self: unset;
+    }
 }
